@@ -26,16 +26,19 @@ well helen my [27] i did
 
 ## Check one example by hand
 
-1. Open the [position table](verification/readings/evidence/HCP1193_Verified_Reading/transcription_and_reading.tsv) and the [key](verification/readings/evidence/HCP1193_Verified_Reading/geometry_key.json). A position such as `r01c01` means row 1, cipher position 1 within that row. Shape labels identify recorded geometric classes.
+1. Open the [position table](verification/readings/evidence/HCP1193_Verified_Reading/transcription_and_reading.tsv) and the [key](verification/readings/evidence/HCP1193_Verified_Reading/geometry_key.json). A position such as `r01c01` means row 1, cipher position 1 within that row. Shape labels identify recorded geometric classes. The replay normalizes side-letter order: `BL2 = LB2` and `TRB1 = TBR1`. The final digit remains part of the class; normalization does not resolve a masked source sign.
 
 | Position | Recorded class | Output |
 | --- | --- | --- |
 | `r01c01` | `TLBR3` | `w` |
 | `r01c02` | `TLBR1` | `e` |
+| `r01c03`–`r01c04` | `BL2` / `LB2` | `l`, `l` |
 | `r01c12` | `TL3` | `[27]` |
 
-2. The first two assignments give `we`; the full first row begins `well helen my [27] i did`. `TL3` has `null` in the key, meaning no established letter value. The replay preserves it as `[27]`.
+2. The first four assignments give `well`; the full first row begins `well helen my [27] i did`. `TL3` has `null` in the key, meaning no established letter value. The replay preserves it as `[27]`.
 3. Compare these shapes with the [original cipher-side image](https://api.hcportal.eu/media/3639/cpc_1907-12-08_USA_Kingston,-NY_USA_New-York__pic.jpg). Do not infer an unclear shape merely because a particular letter would make an English word.
+
+Current heldout accounting is 59/64, rather than the initial 60/64. The [October checks](research-updates/2026-10-09-geometry-checks.md) accepted no new letters.
 
 The table separates original and later reviewed source classes. A masked sign emits `?` even if another interpretation looks attractive. Ordinary handwriting fragments and the uncertain final region are separate from the 222-position cipher count.
 

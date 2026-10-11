@@ -2,17 +2,20 @@
 
 A personal cipher postcard dated 8 December 1907, catalogued as HCP1193. Its geometric symbols can be related to letter positions on a grid.
 
-## What has been found?
+## Current result — 11 October 2026
 
-The proposed English reading addresses Helen, mentions an expected letter that has not arrived, and expresses affection. It assigns letters at 213 of 222 cipher positions; the remaining signs and some ordinary handwriting are unresolved.
+The proposed English reading addresses Helen, mentions an expected letter that has not arrived, and expresses affection. The current partial proposed reading has 222 cipher positions: 213 mapped, eight masked and one unexplained geometric slot `[27]`. Ordinary handwriting islands and terminal marks are counted separately. Coverage is not historical accuracy; current heldout accounting is 59/64, rather than the initial 60/64.
 
-A small example from the recorded result:
+| Evidence layer | Open this |
+| --- | --- |
+| Original | [HCP1193 catalogue](https://crypto.hcportal.eu/dashboard/cryptograms/1193) · [cipher-side image](https://api.hcportal.eu/media/3639/cpc_1907-12-08_USA_Kingston,-NY_USA_New-York__pic.jpg) |
+| Recorded signs / candidate key | [Position table](verification/readings/evidence/HCP1193_Verified_Reading/transcription_and_reading.tsv) · [geometric key](verification/readings/evidence/HCP1193_Verified_Reading/geometry_key.json) |
+| Literal | [Saved reading](verification/readings/evidence/HCP1193_Verified_Reading/literal_reading.txt) |
+| Interpretation | [Research account](kingston-1907/README.md) |
 
-```text
-well helen my [27] i did
-```
+For a manual check, r01c01 `TLBR3 → w`, r01c02 `TLBR1 → e`, and r01c03–04 `BL2/LB2 → l,l` give `well`. Side-letter order is normalized: `BL2` and `LB2`, or `TRB1` and `TBR1`, denote equivalent classes; the final digit remains significant. A masked position still emits `?`. [Check the records](READING_GUIDE.md#check-one-example-by-hand).
 
-[27] is an unexplained symbol position in the proposed key, not a decoded number or a recovered word.
+**Unresolved:** preserve `los?en`, `?ight`, `ki?s es` and `fett?ock`, slot `[27]`, German-like wording and the closing. Handwriting after YOU in row 9 and LOVE in row 12 remains separate. The [October geometry and connectivity checks](research-updates/2026-10-09-geometry-checks.md) accepted no new letters; connected pixels do not establish historical stroke ownership. The mostly English text is a partial reading, with no complete translation of the unresolved wording.
 
 ## Start reading
 
