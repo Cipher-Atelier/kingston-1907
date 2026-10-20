@@ -2,7 +2,9 @@
 
 A personal cipher postcard dated 8 December 1907, catalogued as HCP1193. Its geometric symbols can be related to letter positions on a grid.
 
-## Current result — 11 October 2026
+[Cipher Atelier](https://github.com/Cipher-Atelier) · [Research index](https://github.com/Cipher-Atelier/research-index) · [Reading guide](READING_GUIDE.md) · [Verification](verification/README.md)
+
+## Current status — 11 October 2026
 
 The proposed English reading addresses Helen, mentions an expected letter that has not arrived, and expresses affection. The current partial proposed reading has 222 cipher positions: 213 mapped, eight masked and one unexplained geometric slot `[27]`. Ordinary handwriting islands and terminal marks are counted separately. Coverage is not historical accuracy; current heldout accounting is 59/64, rather than the initial 60/64.
 
@@ -17,7 +19,7 @@ For a manual check, r01c01 `TLBR3 → w`, r01c02 `TLBR1 → e`, and r01c03–04 
 
 **Unresolved:** preserve `los?en`, `?ight`, `ki?s es` and `fett?ock`, slot `[27]`, German-like wording and the closing. Handwriting after YOU in row 9 and LOVE in row 12 remains separate. The [October geometry and connectivity checks](research-updates/2026-10-09-geometry-checks.md) accepted no new letters; connected pixels do not establish historical stroke ownership. The mostly English text is a partial reading, with no complete translation of the unresolved wording.
 
-## Start reading
+## Start here
 
 [8–9 October geometry checks](research-updates/2026-10-09-geometry-checks.md): a finite error model gave no unique reading; local pixel connectivity supplied a limited segmentation observation. No new letters were accepted. This update is a text summary, with full replay materials retained locally.
 
@@ -25,7 +27,7 @@ For a manual check, r01c01 `TLBR3 → w`, r01c02 `TLBR1 → e`, and r01c03–04 
 2. Open [Literal postcard reading](verification/readings/evidence/HCP1193_Verified_Reading/literal_reading.txt) to inspect the saved text or test result itself.
 3. Read the [research account](kingston-1907/README.md) for historical context, methods, earlier work and unresolved questions.
 
-## How can I check it?
+## Reproduce the checks
 
 Follow the worked example in [the reading guide](READING_GUIDE.md#check-one-example-by-hand). It connects a source record, a key or model assumption, and the saved output. For an independent source check, use the [original-source entry](https://crypto.hcportal.eu/dashboard/cryptograms/1193); images are linked, not redistributed here.
 
@@ -37,16 +39,20 @@ python3 verification/check_all.py
 
 A successful run means the published files and declared calculation reproduce. It does not establish that every source sign or historical interpretation is correct.
 
-## Precise research scope
+The [Evidence checks workflow](.github/workflows/verify.yml) runs this offline baseline on Python 3.10 and 3.13, without installing dependencies, and checks changed-file whitespace.
+
+## Research scope and limitations
 
 Partial geometric-key reading: 213 mapped out of 222 positions, eight masks and unexplained slot 27. Coverage is not accuracy; retain original and later corrections.
 
-This is part of [Cipher-Atelier](https://github.com/Cipher-Atelier), founded by [Maxim Egorov](https://github.com/cayde-6). Explore the [research index](https://github.com/Cipher-Atelier/research-index), [contribution guide](https://github.com/Cipher-Atelier/.github/blob/main/CONTRIBUTING.md), and [step-by-step research workflow](https://github.com/Cipher-Atelier/research-index/blob/main/START_HERE.md).
+## Contribute
+
+This is part of [Cipher Atelier](https://github.com/Cipher-Atelier), founded by [Maxim Egorov](https://github.com/cayde-6). Explore the [research index](https://github.com/Cipher-Atelier/research-index), [contribution guide](https://github.com/Cipher-Atelier/.github/blob/main/CONTRIBUTING.md), and [step-by-step research workflow](https://github.com/Cipher-Atelier/research-index/blob/main/START_HERE.md).
+
+Read the current result and source limitations, then coordinate a bounded task in an existing issue or use [Work on existing research](https://github.com/Cipher-Atelier/kingston-cipher-postcard-1907/issues/new?template=research.yml). Fork the repository and submit a focused pull request with your evidence and checks. Independent replication and constructive alternative readings are welcome. See [Start here](https://github.com/Cipher-Atelier/research-index/blob/main/START_HERE.md) for the shared workflow.
+
+## Sources and rights
 
 Source credit and item-specific restrictions remain in the research records. Scans, crops, restricted materials and private correspondence are excluded. No new blanket licence is asserted. AI-assisted work requires evidence checking and does not constitute external human expert review.
 
 [Publication provenance](SOURCE_PROVENANCE.json) records the source commit, retained file hashes and deliberate code/navigation adaptations. The original repository history remains intact.
-
-## Contribute to this investigation
-
-Read the current result and source limitations, then coordinate a bounded task in an existing issue or use [Work on existing research](https://github.com/Cipher-Atelier/kingston-cipher-postcard-1907/issues/new?template=research.yml). Fork the repository and submit a focused pull request with your evidence and checks. Independent replication and constructive alternative readings are welcome. See [Start here](https://github.com/Cipher-Atelier/research-index/blob/main/START_HERE.md) for the shared workflow.
